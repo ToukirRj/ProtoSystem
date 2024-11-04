@@ -1,0 +1,272 @@
+
+//=======Local-Font=========>
+@layer base {
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 100;
+      src: url('/fonts/Mont-100.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 200;
+      src: url('/fonts/Mont-200.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 300;
+      src: url('/fonts/Mont-300.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 400;
+      src: url('/fonts/Mont-400.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 500;
+      src: url('/fonts/Mont-500.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 600;
+      src: url('/fonts/Mont-600.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 700;
+      src: url('/fonts/Mont-700.otf');
+    }
+    @font-face {
+      font-family: 'Mont';
+      font-weight: 800;
+      src: url('/fonts/Mont-800.otf');
+    }
+    #root{
+        font-family: 'Mont';
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+//========Custom SASS=========>
+header{
+    nav{
+        a{
+            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] hover:text-[#17b057] px-6;
+            &.active{
+                @apply text-[#17b057];
+            }
+        }
+    }
+}
+.nav-btn{
+    @apply cursor-pointer bg-transparent border-0 outline-0 text-gray-700 lg:hidden lg:opacity-0 visible opacity-100;
+}
+
+@media only screen and (max-width:1024px){
+    header{
+        nav{
+            @apply fixed top-0 left-0 z-10 h-[100vh] w-full flex flex-col items-center justify-center gap-2 bg-white/[0.5] backdrop-blur-lg transition-[1.5s] transform translate-y-[-100vh];
+            .close-btn{
+                @apply visible block absolute top-[1rem] right-[1rem];
+                margin-top:0 !important;
+            }
+            a{
+                @apply text-[15px] text-[#000];
+            }
+        }
+        .no-respons{
+            @apply transform-none;
+        }
+    }
+}
+
+
+//testimonial slider
+// .swiper-button-prev,
+// .swiper-button-next{
+//     height: 100% !important;
+//     top: 15px !important;
+//     width: 170px !important;
+//     &::after {
+//         @apply text-white font-[900] bg-[#17b057] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
+//         @apply text-[16px] #{!important};
+//     }
+// }
+// .swiper-button-prev{
+//     @apply bg-gradient-to-r from-[#FAF4E7] via-[#faf4e7de] to-transparent;
+//     @apply left-[-35px] #{!important};
+// }
+// .swiper-button-next{
+//     @apply bg-gradient-to-l from-[#FAF4E7] via-[#faf4e7de] to-transparent;
+//     @apply right-[-35px] #{!important};
+// }
+// @media only screen and (max-width:1023px){
+//     .swiper{
+//         @apply relative;
+//     }
+//     .swiper-button-prev,
+//     .swiper-button-next{
+//         @apply h-auto #{!important};
+//         @apply top-auto #{!important};
+//         @apply bottom-3 #{!important};
+//         @apply w-auto #{!important};
+//         @apply z-10 #{!important};
+        
+//     }
+//     .swiper-button-prev{
+//         left:35% !important;
+//     }
+//     .swiper-button-next{
+//         right:35% !important;
+//     }
+// }
+
+
+//steps works
+.step:last-child{
+    .line{
+        @apply hidden;
+    }
+}
+
+//Loader Sass
+.loader-area{
+    @apply h-[100vh] w-full flex items-center justify-center bg-[#FAF4E7] text-[5rem] overflow-hidden;
+}
+.waveform {
+    @apply inline-flex h-[.8em] w-[1em] gap-[0.1em] items-center;
+}
+.wave-bar {
+    // animation: waves 250s linear infinite alternate;
+    @apply w-[4px] h-[10%] rounded-[100px] animate-[waves_250ms_linear_infinite_alternate] bg-[#17b057];
+}
+.wave-bar:nth-child(2) {
+	animation-delay: 100ms;
+	@apply bg-[#F97F40];
+}
+.wave-bar:nth-child(3) {
+	animation-delay: 200ms;
+	@apply bg-[#1F2937];
+}
+.wave-bar:nth-child(4) {
+	animation-delay: 120ms;
+	@apply bg-[#F97F40];
+}
+.wave-bar:nth-child(5) {
+	animation-delay: 70ms;
+	@apply bg-[#17b057];
+}
+@keyframes waves {
+	from {
+		height: 10%;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+.circular-progress-wrapper {
+    @apply relative;
+}
+
+.circular-progress-wrapper .CircularProgressbar .CircularProgressbar-path {
+    stroke-width: var(--path-stroke-width);
+}
+
+.circular-progress-wrapper .CircularProgressbar .CircularProgressbar-trail {
+    stroke-width: var(--trail-stroke-width);
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	dominant-baseline: ideographic !important;
+}
+
+.CircularProgressbar .CircularProgressbar-text{
+    @apply font-[600];
+    font-size:17px !important;
+}
+
+.header {
+    @apply flex items-center justify-between;
+	transform: translateY(0);
+	transition: all 0.9s;
+}
+.header.hidden {
+    transform: translateY(-100%);
+    transition-duration:.5s;
+    transition-timing-function:ease;
+}
+
+
+svg.mouse #wheel {
+	animation: scrollmouse ease 1.5s infinite;
+}
+@keyframes scrollmouse {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+canvas {
+	filter: blur(250px);
+    @apply opacity-[.32] fixed -z-10 top-0 left-0 w-full h-[100vh];
+}
+
+.default.canvas {
+	filter: blur(250px);
+    @apply opacity-[0.6] absolute -z-10 top-0 left-0 w-full h-[100vh];
+}
+
+.btn-left{
+    left:calc(100% - 43px);
+}
+
+.card {
+    @apply grid place-items-center aspect-[1] bg-[#fbceb1] rounded-[1em] relative;
+}
+
+.holder {
+    @apply absolute grid place-items-center w-[4em] h-[4em] bg-transparent;
+}
+.holder::before, 
+.holder::after {
+    @apply absolute w-[1.25em] h-[1.25em] bg-transparent;
+    content: "";
+}
+.one {
+	inset: calc(100% - 4em) 0 0 calc(100% - 4em);
+	border-top-left-radius: 1.25em;
+	transition: 1s ease 0.5s;
+}
+.one::before {
+    inset: calc(100% - 1.25em) 0 0 -1.25em;
+    border-bottom-right-radius: 1.25em;
+    box-shadow: 0.3em 0.3em 0 0.3em rgba($color: #000000, $alpha:0);
+    transition: 1s ease;
+}
+.one::after {
+    inset: -1.25em 0 0 2.75em;
+    border-bottom-right-radius: 1.25em;
+    box-shadow: 0.3em 0.3em 0 0.3em rgba($color: #000000, $alpha:0);
+    transition: 1s ease;
+}
+
+.circle {
+    @apply w-[3em] aspect-[1] bg-[#0220E7] rounded-[50%] z-10;
+}
+
+.each-service:nth-child(3){
+    @apply relative -top-[150px];
+}
+@media only screen and (max-width: 767px) {
+    .each-service:nth-child(3){
+        @apply relative -top-0;
+    }
+}

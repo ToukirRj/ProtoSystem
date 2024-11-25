@@ -6,13 +6,14 @@ import { NavLink } from 'react-router-dom';
 import HeaderAnimate from '../props/HeaderAnimate';
 
 
+// eslint-disable-next-line react/prop-types
 function Header({ onToggleOffCanvas }) {
     const navRef = useRef();
     const showNavbar = () => {
         navRef.current.classList.toggle('no-respons');
     }
     return (
-        <header className='header fixed w-full shadow backdrop-blur-lg px-4 z-30 left-0 top-0 right-0 my-0 h-[60px]'>
+        <header className='header fixed w-full px-4 z-30 left-0 top-0 right-0 my-0 h-[60px] bg-white/[.15] backdrop-blur-[50px] shadow'>
             <div className='px-4 sm:px-12 w-full xl:px-0 max-w-7xl mx-auto'>
                 <div className='relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 py-2'>
                     <Link to="/"><img src={logo} className='sm:w-[57px] w-[44px]' alt='logo'/></Link>

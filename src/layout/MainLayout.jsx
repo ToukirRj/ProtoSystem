@@ -1,7 +1,7 @@
 // MainLayout.jsx
 import Header from './Header';
 import Footer from './Footer';
-import CanvasAnimation from '../props/CanvasAnimation';
+import BgBackdrop from '../props/BgBackdrop';
 import RightOffCanvas from '../props/RightOffCanvas';
 import ScrollTo from '../props/ScrollTo';
 import PropTypes from 'prop-types';
@@ -27,7 +27,7 @@ function MainLayout({ children }) {
           <RightOffCanvas isOpen={isOffCanvasOpen} onClose={() => setOffCanvasOpen(false)} />
         <Footer onToggleOffCanvas={toggleOffCanvas} />
         <ScrollTo />
-        <CanvasAnimation />
+        <BgBackdrop/>
     </>
   );
 }

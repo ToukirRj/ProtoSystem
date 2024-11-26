@@ -8,15 +8,15 @@ const Splash = () => {
     return (
         <>
             <div className='relative z-20'>
-                <div className="md:pt-[200px] pt-[110px] pb-12 relative z-10">
-                    <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0 space-y-2">
-                        <div className="flex md:flex-row flex-col items-center justify-center gap-2 relative z-20 ">
+                <div className="md:pt-[180px] pt-[110px] pb-12 relative z-10">
+                    <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
+                        <div className="flex md:flex-row flex-col items-center justify-center gap-3 relative z-20 ">
                             <div className="min-h-[422px] h-auto md:w-2/5 w-full relative rounded-[60px] p-[40px] bg-white/[0.2] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                <img className="w-[180px] max-w-full mx-auto" src={Selfsign} alt="me"/>
-                                <h1 className="my-2 md:text-[43px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
+                                <img className="w-[180px] max-w-full mx-auto" src={Selfsign} alt="me" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100"/>
+                                <h1 className="my-2 md:text-[43px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                     Toukir Rahman
                                 </h1>
-                                <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10">
+                                <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                     <div className="flex justify-center">
                                         <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-4 pe-[12px] bg-[#20bd62] hover:bg-[#299c59] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] absolute -z-[1] left-[5px] bg-[#2b6e58] group-hover:bg-[#235847] rounded-full btn-left ease-in-out duration-500"></span>
@@ -29,7 +29,7 @@ const Splash = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="min-h-[422px] h-auto md:w-3/5 w-full rounded-[60px] sm:block flex flex-col items-center pt-[50px] p-[45px] z-10 md:mt-0 mt-6 bg-white/[0.2] border border-white/[0.15]">
+                            <div className="min-h-[422px] h-auto md:w-3/5 w-full rounded-[60px] sm:block flex flex-col items-center pt-[50px] p-[45px] z-10 md:mt-0 mt-6 bg-white/[0.2] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                 <h4 className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">Front-End Engineer | UX/UI Engineer</h4>
                                 <h1 className="md:my-[23px] my-[17px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">
                                     Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
@@ -39,17 +39,21 @@ const Splash = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='flex justify-center'>
-                            <div className='w-auto max-w-full bg-white/[.15] rounded-[40px] flex flex-col items-center justify-center border border-white/[0.2]'>
-                                <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] mb-2 text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1>
-                                <div className="flex items-center justify-center gap-2 mx-auto p-2">
+                        <div className='mt-3 flex justify-center' data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                            <div className='p-2 w-auto max-w-full bg-white/[.2] rounded-[40px] flex flex-col items-center justify-center border border-white/[0.15]'>
+                                {/* <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] my-3 text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1> */}
+                                <div className="flex items-center justify-center gap-2 mx-auto">
                                     {socialLinksData.map(link => (
                                         <Link key={link.id} to={link.url} target={link.target}
-                                            className="w-16 h-16 flex items-center justify-center bg-white/[0.25] rounded-[70px] hover:shadow-lg hover:bg-white/[0.8] transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                                            
-                                                <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
-                                                {/* <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p> */}
-                                            
+                                            className="group px-1 w-auto h-14 flex items-center justify-center bg-white/[0.35] rounded-[70px] hover:shadow-lg transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                                            <img className="w-5 h-5 rounded-full ms-5 me-1" src={link.imageSrc} alt={`${link.platform} logo`} />
+                                            <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] me-2">{link.platform}</p>
+                                            <span className='h-12 w-12 flex items-center justify-center bg-white/[0.5] group-hover:bg-white/[0.85] rounded-full'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 1024 1024" className='relative'>
+                                                    <path fill="#1f2937" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
+                                                    <path fill="#1f2937" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
+                                                </svg>
+                                            </span>
                                         </Link>
                                     ))}
                                 </div>

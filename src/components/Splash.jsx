@@ -9,11 +9,11 @@ const Splash = () => {
         <>
             <div className='relative z-20'>
                 <div className="md:pt-[200px] pt-[110px] pb-12 relative z-10">
-                    <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
-                        <div className="items-center justify-center md:gap-3 gap-5 flex md:flex-row flex-col relative z-20 ">
-                            <div className="md:w-2/5 w-full relative rounded-[60px] p-[40px] bg-white/[0.15] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                <img className="w-[220px] max-w-full mx-auto" src={Selfsign} alt="me"/>
-                                <h1 className="my-2 md:text-[41px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
+                    <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0 space-y-2">
+                        <div className="flex md:flex-row flex-col items-center justify-center gap-2 relative z-20 ">
+                            <div className="min-h-[422px] h-auto md:w-2/5 w-full relative rounded-[60px] p-[40px] bg-white/[0.2] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                <img className="w-[180px] max-w-full mx-auto" src={Selfsign} alt="me"/>
+                                <h1 className="my-2 md:text-[43px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center">
                                     Toukir Rahman
                                 </h1>
                                 <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10">
@@ -29,28 +29,31 @@ const Splash = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="md:w-3/5 w-full rounded-[60px] sm:block flex flex-col items-center p-[40px] z-10 md:mt-2 mt-6 bg-white/[0.15] border border-white/[0.15]">
+                            <div className="min-h-[422px] h-auto md:w-3/5 w-full rounded-[60px] sm:block flex flex-col items-center pt-[50px] p-[45px] z-10 md:mt-0 mt-6 bg-white/[0.2] border border-white/[0.15]">
                                 <h4 className="bg-[#1F2937] text-[#fff] text-[13px] font-[400] tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">Front-End Engineer | UX/UI Engineer</h4>
                                 <h1 className="md:my-[23px] my-[17px] text-[#1f2937] md:text-[55px] text-[27px] font-[700] md:leading-[64px] leading-[36px] tracking-normal md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="150">
                                     Addicted to Advanced<span className='bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text'>Design and Coding</span></h1>
-                                <p className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] md:text-start text-center mb-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
+                                <p className="text-[15px] leading-[30px] font-[400] tracking-[0.35px] text-[#1F2937] md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
                                     A safe hand to take your vision & the weight of your project off your shoulders, to getting done 
                                     perfectly. A Professional Website Application Engineer with a passion for creating inspiring and influential designs. Committed to working with honesty and dedication.
                                 </p>
-                                <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] mb-2 md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1>
-                                
                             </div>
                         </div>
-                        <div className="flex items-center md:justify-start justify-center grid-cols-4 md:space-x-4 space-x-0 md:gap-0 gap-2 mx-auto">
-                            {socialLinksData.map(link => (
-                                <Link key={link.id} to={link.url} target={link.target}
-                                    className="flex items-center md:space-x-3 space-x-1 md:py-3 py-2 md:px-5 px-3 bg-white/[0.15] rounded-[15px] hover:shadow-lg hover:bg-white/[0.8] transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                                    <div className="flex flex-col items-center mx-auto">
-                                        <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
-                                        <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p>
-                                    </div>
-                                </Link>
-                            ))}
+                        <div className='flex justify-center'>
+                            <div className='w-auto max-w-full bg-white/[.15] rounded-[40px] flex flex-col items-center justify-center border border-white/[0.2]'>
+                                <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] mb-2 text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1>
+                                <div className="flex items-center justify-center gap-2 mx-auto p-2">
+                                    {socialLinksData.map(link => (
+                                        <Link key={link.id} to={link.url} target={link.target}
+                                            className="w-16 h-16 flex items-center justify-center bg-white/[0.25] rounded-[70px] hover:shadow-lg hover:bg-white/[0.8] transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                                            
+                                                <img className="w-8 h-8 rounded-full" src={link.imageSrc} alt={`${link.platform} logo`} />
+                                                {/* <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] mt-2">{link.platform}</p> */}
+                                            
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                         <div className="mt-24 relative z-10 md:block hidden">
                             <div className="flex justify-center">

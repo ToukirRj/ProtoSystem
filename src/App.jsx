@@ -67,20 +67,20 @@ function App() {
   return (
     <>
       <div>
-      {loading ? 
-        <div className="loader-area">
-          <div className="waveform">
-              <div className="wave-bar"></div>
-              <div className="wave-bar"></div>
-              <div className="wave-bar"></div>
-              <div className="wave-bar"></div>
-              <div className="wave-bar"></div>
-          </div>
+        {loading ? 
+          <div className="loader-area">
+            <div className="waveform">
+                <div className="wave-bar"></div>
+                <div className="wave-bar"></div>
+                <div className="wave-bar"></div>
+                <div className="wave-bar"></div>
+                <div className="wave-bar"></div>
+            </div>
+        </div>
+        : 
+          <Outlet/>
+        }
       </div>
-      : 
-        <Outlet/>
-      }
-    </div>
     </>
   );
 }

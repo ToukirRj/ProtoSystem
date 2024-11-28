@@ -45,10 +45,10 @@
         font-family: 'Mont';
     }
 }
+
 html {
     scroll-behavior: smooth;
 }
-
 
 
 //========Custom SASS=========>
@@ -83,47 +83,6 @@ header{
         }
     }
 }
-
-
-//testimonial slider
-// .swiper-button-prev,
-// .swiper-button-next{
-//     height: 100% !important;
-//     top: 15px !important;
-//     width: 170px !important;
-//     &::after {
-//         @apply text-white font-[900] bg-[#17b057] w-[40px] h-[40px] rounded-[30px] flex items-center justify-center;
-//         @apply text-[16px] #{!important};
-//     }
-// }
-// .swiper-button-prev{
-//     @apply bg-gradient-to-r from-[#FAF4E7] via-[#faf4e7de] to-transparent;
-//     @apply left-[-35px] #{!important};
-// }
-// .swiper-button-next{
-//     @apply bg-gradient-to-l from-[#FAF4E7] via-[#faf4e7de] to-transparent;
-//     @apply right-[-35px] #{!important};
-// }
-// @media only screen and (max-width:1023px){
-//     .swiper{
-//         @apply relative;
-//     }
-//     .swiper-button-prev,
-//     .swiper-button-next{
-//         @apply h-auto #{!important};
-//         @apply top-auto #{!important};
-//         @apply bottom-3 #{!important};
-//         @apply w-auto #{!important};
-//         @apply z-10 #{!important};
-        
-//     }
-//     .swiper-button-prev{
-//         left:35% !important;
-//     }
-//     .swiper-button-next{
-//         right:35% !important;
-//     }
-// }
 
 
 //steps works
@@ -195,6 +154,7 @@ header{
 	transform: translateY(0);
 	transition: all 0.9s;
 }
+
 .header.hidden {
     transform: translateY(-100%);
     transition-duration:.5s;
@@ -205,6 +165,7 @@ header{
 svg.mouse #wheel {
 	animation: scrollmouse ease 1.5s infinite;
 }
+
 @keyframes scrollmouse {
 	0% {
 		transform: translateY(0);
@@ -229,22 +190,26 @@ svg.mouse #wheel {
 .holder {
     @apply absolute grid place-items-center w-[4em] h-[4em] bg-transparent;
 }
+
 .holder::before, 
 .holder::after {
     @apply absolute w-[1.25em] h-[1.25em] bg-transparent;
     content: "";
 }
+
 .one {
 	inset: calc(100% - 4em) 0 0 calc(100% - 4em);
 	border-top-left-radius: 1.25em;
 	transition: 1s ease 0.5s;
 }
+
 .one::before {
     inset: calc(100% - 1.25em) 0 0 -1.25em;
     border-bottom-right-radius: 1.25em;
     box-shadow: 0.3em 0.3em 0 0.3em rgba($color: #000000, $alpha:0);
     transition: 1s ease;
 }
+
 .one::after {
     inset: -1.25em 0 0 2.75em;
     border-bottom-right-radius: 1.25em;
@@ -259,8 +224,17 @@ svg.mouse #wheel {
 .each-service:nth-child(3){
     @apply relative -top-[150px];
 }
+
 @media only screen and (max-width: 767px) {
     .each-service:nth-child(3){
         @apply relative -top-0;
     }
+}
+
+canvas {
+    @apply fixed -z-10 top-0 left-0 w-full h-[100vh];
+}
+
+.default.canvas {
+    @apply opacity-[0.6] absolute -z-10 top-0 left-0 w-full h-[100vh];
 }

@@ -8,9 +8,9 @@ const Myself = () => {
         <>
             <div id="about" className="md:py-20 py-6 relative z-20">
                 <div className="mx-auto px-4 md:px-12 xl:max-w-7xl xl:px-0">
-                    <div className="grid md:grid-cols-12 grid-cols-1 md:mb-12 mb-5 items-center">
+                    <div className="grid md:grid-cols-12 grid-cols-1 mb-3 items-center">
                         <div className="col-span-3">
-                            <div className="md:ps-4 ps-0 md:mt-5 mt-0 md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                            <div className="md:ps-4 ps-0 mt-0 md:text-start text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                 <h2 className="xl:text-[51px] text-[37px] font-bold text-[#1F2937] leading-[53px]">Effective  
                                 <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text leading-[57px] md:ps-0 ps-2">Facts</span></h2>
                                 <p className='mt-1 text-[#1F2937] md:text-[17px] text-[16px] font-[300] tracking-wide leading-[27px]'>My unique strategy that makes the target more specific</p>
@@ -27,20 +27,20 @@ const Myself = () => {
                             </div>
                         </div>
                         <div className="col-span-9" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
-                            <div className='backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] py-8 md:px-10 px-3 rounded-[45px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]'>
+                            <div className='py-8 md:px-10 px-3 rounded-[45px] bg-white/[0.2] border border-white/[0.15]'>
                                 <div className='flex md:flex-row flex-col justify-between md:items-center items-center'>
                                     <h2 className="text-[26px] font-[600] tracking-tight text-[#1F2937]">Inner latent behave</h2>
                                     <div className='md:flex table text-center flex-row text-[14px] font-[500] text-[#1F2937] tracking-wide gap-2'>
-                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-[#FF8045]/[.18]'>
+                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-white/[.45]'>
                                             <p>Accessible</p>
                                         </div>
-                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-[#FF8045]/[.18]'>
+                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-white/[.45]'>
                                             <p>Collaborative</p>
                                         </div>
-                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-[#FF8045]/[.18]'>
+                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-white/[.45]'>
                                             <p>Empathetic</p>
                                         </div>
-                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-[#FF8045]/[.18]'>
+                                        <div className='md:mx-0 mx-1 md:my-0 my-1 h-[30px] px-4 w-auto rounded-[30px] md:flex inline-flex items-center bg-white/[.45]'>
                                             <p>Iterative</p>
                                         </div>
                                     </div>
@@ -67,20 +67,20 @@ const Myself = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-4 grid-cols-1 md:gap-6 gap-3">
+                    <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
                         {statisticData.map(statistic => (
-                            <div key={statistic.id} className="relative overflow-hidden backdrop-blur-lg bg-gradient-to-t from-[#ff8144]/[0.05] to-white/[0.15] rounded-[40px] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)]" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
-                                <div className='flex flex-row items-center justify-between p-3'>
+                            <div key={statistic.id} className="relative overflow-hidden rounded-[40px] bg-white/[0.2] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
+                                <div className='flex flex-row items-center justify-between p-2'>
                                     <span className="ms-4 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
-                                    <div className="h-14 w-14 rounded-full bg-[#17B057]/[.15] flex items-center justify-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
+                                    <div className="h-14 w-14 rounded-full bg-white/[.35] flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                     </div>
                                 </div>
-                                <h2 className="ms-7 -mt-2 md:text-[46px] text-[40px] leading-[46px] font-bold text-[#1F2937]">{statistic.value}</h2>
+                                <h2 className="ms-7 -mt-[1.25rem] md:text-[46px] text-[40px] leading-[46px] font-bold text-[#1F2937]">{statistic.value}</h2>
                                 <div className='flex items-center justify-center md:pt-4 pb-2 pt-1'>
                                     <img className='max-w-[200px] w-full opacity-80' src={statistic.image} alt='chart'/>
                                 </div>
-                                <span className='absolute bottom-0 md:h-[230px] h-[150px] w-full bg-gradient-to-t from-[#FAF4E7]/[0.95] via-transparent to-transparent'></span>
+                                {/* <span className='absolute bottom-0 md:h-[230px] h-[150px] w-full bg-gradient-to-t from-white/[0.5] via-transparent to-transparent'></span> */}
                             </div>
                         ))}
                     </div>

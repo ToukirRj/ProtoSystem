@@ -10,13 +10,15 @@ import Bio from '../components/Bio';
 const Home = () => {
   return (
     <MainLayout>
-      <Splash/>
-      <Myself/>
-      <Eyes/>
-      <Weapons/>
-      <Bio/>
-      <Steps/>
-      {/* <Satisfy/> */}
+      <div className="scroll-container">
+        <Splash/>
+        <Myself/>
+        <Eyes/>
+        <Weapons/>
+        <Bio/>
+        <Steps/>
+        {/* <Satisfy/> */}
+      </div>
     </MainLayout>
   );
 };

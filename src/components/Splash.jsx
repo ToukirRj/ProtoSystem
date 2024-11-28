@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom'
 import Selfsign from '/img/me.webp'
 import socialLinksData from '../datas/socialLinksData';
 
-
-// eslint-disable-next-line react/prop-types
 const Splash = () => {
     return (
         <>
@@ -40,15 +38,15 @@ const Splash = () => {
                             </div>
                         </div>
                         <div className='mt-3 flex justify-center' data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                            <div className='p-2 w-auto max-w-full bg-white/[.2] rounded-[40px] flex flex-col items-center justify-center border border-white/[0.15]'>
+                            <div className='p-2 w-auto max-w-full rounded-[40px] flex flex-col items-center justify-center bg-white/[.2] border border-white/[0.15]'>
                                 {/* <h1 className="text-[21px] font-semibold tracking-tight text-[#1f2937] my-3 text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">Get Me Connect Now on</h1> */}
                                 <div className="flex items-center justify-center gap-2 mx-auto">
                                     {socialLinksData.map(link => (
                                         <Link key={link.id} to={link.url} target={link.target}
-                                            className="group px-1 w-auto h-14 flex items-center justify-center bg-white/[0.35] rounded-[70px] hover:shadow-lg transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                                            className="px-2 w-auto h-14 flex items-center justify-center bg-white/[0.35] hover:bg-white/[0.75] rounded-[70px] hover:shadow-lg transition-all" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
                                             <img className="w-5 h-5 rounded-full ms-5 me-1" src={link.imageSrc} alt={`${link.platform} logo`} />
-                                            <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] me-2">{link.platform}</p>
-                                            <span className='h-12 w-12 flex items-center justify-center bg-white/[0.5] group-hover:bg-white/[0.85] rounded-full'>
+                                            <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] me-3">{link.platform}</p>
+                                            <span className='h-11 w-11 flex items-center justify-center bg-transparent rounded-full border border-[#1f2937]/[0.13]'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 1024 1024" className='relative'>
                                                     <path fill="#1f2937" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
                                                     <path fill="#1f2937" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>

@@ -17,9 +17,9 @@ const Eyes = () => {
                             </div>
                         </div>
                         {serviceData.map(service => (
-                            <div key={service.id} className="each-service md:rounded-[64px] rounded-[44px] overflow-hidden bg-white/[.25] border border-white/[.15]" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                            <div key={service.id} className="each-service md:rounded-[64px] rounded-[44px] overflow-hidden bg-white/[.2] border border-white/[.15]" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                                 <div className='w-full relative'>
-                                    <div className='absolute right-0 top-0 md:h-[130px] h-[90px] md:w-[130px] w-[90px] rounded-full bg-white flex items-center justify-center shadow'>
+                                    <div className='absolute right-2 top-2 md:h-[110px] h-[90px] md:w-[110px] w-[90px] rounded-full bg-white/[.35] flex items-center justify-center'>
                                         <img width="50" height="50" src={service.imgPath} alt='icon'/>  
                                     </div>
                                     <div className='relative md:p-[50px] p-[30px]'>
@@ -38,7 +38,6 @@ const Eyes = () => {
                                         </div>
                                     </div>
                                     <img className='absolute -bottom-10 -right-10 -z-10 w-[420px]' src={service.img} alt="img"/>
-                                    <span className='absolute h-[70%] w-full bottom-0 left-0 bg-gradient-to-t from-white/[0.65] to-transparent -z-10'></span>
                                 </div>
                             </div>
                         ))}

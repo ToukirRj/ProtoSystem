@@ -17,22 +17,22 @@ const Bio = () => {
                         </p>
                     </div>
                     <div className="md:mt-8 mt-4 relative z-10">
-                        <div className="md:gap-8 gap-4 grid md:grid-cols-2 grid-cols-1">
+                        <div className="md:gap-3 gap-4 grid md:grid-cols-2 grid-cols-1">
                             <div className="w-full" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                <div className="md:p-10 p-4 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
+                                <div className="md:p-2 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
                                     <h2 className="flex items-center justify-center">
                                         <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Full Time (Official)</span>
                                     </h2>
-                                    <div className="tracking-normal mt-4">
+                                    <div className="tracking-normal flex flex-col gap-2">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative bg-white/[0.25] border border-white/[0.15] hover:bg-white/[0.35] transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                            className="group flex p-5 overflow-hidden relative bg-white/[0.35] border border-white/[0.15] hover:bg-white/[0.35] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                                 <div className="flex gap-2 items-center">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
                                                     <div>
-                                                        <div className="flex gap-3 items-center justify-start mt-4">
+                                                        <div className="flex gap-3 items-center justify-start">
                                                             <span className="block w-max md:text-[17px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
                                                             <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.65] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
                                                                 <time>{expo.startDate}</time>

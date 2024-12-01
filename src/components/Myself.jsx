@@ -48,7 +48,7 @@ const Myself = () => {
                                 <div className="flex items-center md:flex-row flex-col md:px-0 px-[20px]">
                                     <div className="lg:w-2/12 md:1/2 w-full">
                                         <div className='flex items-center justify-center'>
-                                            <div className="w-[150px] h-[150px] border-2 border-white p-1 rounded-full mt-4">
+                                            <div className="w-[150px] h-[150px] border-2 border-white/[0.5] p-1 rounded-full mt-4">
                                                 <img className="h-full md:w-full rounded-full" src={Abme} alt="cover"/>
                                             </div>
                                         </div>

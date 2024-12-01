@@ -7,6 +7,7 @@ export const experienceData1 = [
         endDate: 'Present',
         company: 'Next IT Ltd.',
         position: 'UI-UX Engineer',
+        location: 'Meah Bari, House-03, Road-13, Gulshan-1, Dhaka-1212',
         logo: './img/jobs/next.webp',
         img:"./img/services/1.svg"
     },
@@ -17,6 +18,7 @@ export const experienceData1 = [
         endDate: 'Aug 2021',
         company: 'WAN IT Ltd.',
         position: 'Frontend Engineer',
+        location: 'Gulfesha Plaza, S.S. Parvin Road, Moghbazar, Dhaka',
         logo: './img/jobs/wan.webp',
         img:"./img/services/3.svg"
     },
@@ -26,6 +28,7 @@ export const experienceData1 = [
         startDate: 'Mar 2015',
         endDate: 'Feb 2017',
         company: 'Sakoyat Soft',
+        location: 'Dakshinkhan, Housebuilding, Uttara, Dhaka-1230',
         position: 'Web Designer',
         logo: './img/jobs/sako.webp',
         img:"./img/services/2.svg"

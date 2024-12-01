@@ -43,8 +43,8 @@ const Splash = () => {
                                 <div className="flex items-center justify-center gap-2 mx-auto">
                                     {socialLinksData.map(link => (
                                         <Link key={link.id} to={link.url} target={link.target}
-                                            className="px-2 w-auto h-14 flex items-center justify-center bg-white/[0.35] hover:bg-white/[0.75] rounded-[70px] hover:shadow-lg transition-all border border-white/[0.25]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                                            <img className="w-5 h-5 rounded-full ms-5 me-1" src={link.imageSrc} alt={`${link.platform} logo`} />
+                                            className="px-2 w-auto h-[58px] flex items-center justify-center bg-white/[0.35] hover:bg-white/[0.75] rounded-[70px] hover:shadow-lg transition-all border border-white/[0.25]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                                            <img className="w-6 h-6 rounded-full ms-3 me-1" src={link.imageSrc} alt={`${link.platform} logo`} />
                                             <p className="md:text-[14px] text-[12px] font-[500] text-[#1f2937] tracking-[.45px] me-3">{link.platform}</p>
                                             <span className='h-11 w-11 flex items-center justify-center bg-transparent rounded-full border border-[#1f2937]/[0.13]'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 1024 1024" className='relative'>

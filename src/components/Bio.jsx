@@ -26,22 +26,25 @@ const Bio = () => {
                                     <div className="tracking-normal flex flex-col gap-2">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group flex p-5 overflow-hidden relative bg-white/[0.35] border border-white/[0.15] hover:bg-white/[0.35] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                                <div className="flex gap-2 items-center">
+                                            className="group p-5 overflow-hidden relative bg-white/[0.35] border border-white/[0.15] hover:bg-white/[0.35] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                                <div className="flex gap-2">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
-                                                    <div>
-                                                        <div className="flex gap-3 items-center justify-start">
-                                                            <span className="block w-max md:text-[17px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
-                                                            <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.65] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
-                                                                <time>{expo.startDate}</time>
-                                                                <span>—</span>
-                                                                <time>{expo.endDate}</time>
-                                                            </dd>
+                                                    <div className='pe-10'>
+                                                        <div className="">
+                                                            <span className="block w-max md:text-[18px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
+                                                            <div className="text-[13px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.location}</div>
                                                         </div>
-                                                        <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.position}</div>
                                                     </div>
+                                                </div>
+                                                <div className="flex gap-3 items-center justify-start">
+                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.65] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
+                                                        <time>{expo.startDate}</time>
+                                                        <span>—</span>
+                                                        <time>{expo.endDate}</time>
+                                                    </dd>
+                                                    <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.position}</div>
                                                 </div>
                                                 <div className="md:h-14 md:w-14 h-10 w-10 absolute right-[5px] top-[5px] rounded-full border border-[#1f2937]/[0.18] group-hover:bg-white group-hover:border-white flex items-center justify-center transition-all duration-500">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ease-in-out duration-500'>

@@ -71,7 +71,7 @@ const Myself = () => {
                         {statisticData.map(statistic => (
                             <div key={statistic.id} className="relative overflow-hidden rounded-[40px] bg-white/[0.2] border border-white/[0.15]" data-aos="fade-up" data-aos-duration="400" data-aos-delay="300">
                                 <div className='flex flex-row items-center justify-between p-2'>
-                                    <span className="ms-4 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
+                                    <span className="ms-5 block w-max text-[13px] font-medium uppercase tracking-wider text-[#1F2937]">{statistic.label}</span>
                                     <div className="h-14 w-14 rounded-full bg-white/[.35] flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={statistic.iconColor} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: statistic.iconPath }} />
                                     </div>

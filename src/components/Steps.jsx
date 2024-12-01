@@ -23,21 +23,21 @@ const Steps = () => {
                         </div>
                         <div className="w-full ps-10">
                             {stepsData.map(step => (
-                                <div key={step.id} className="step relative z-10 w-full mt-[17px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                    <span className='absolute -z-50 -top-[4px] -left-[34px] w-[40px] h-[40px] rounded-l-[40px] rounded-tr-[40px] bg-[#FF8045] flex items-center justify-center'>
-                                        <h3 className='text-[22px] font-[600] text-white'>{step.id}</h3>
+                                <div key={step.id} className="step relative z-10 w-full mt-3" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                    <span className='absolute -z-50 -top-[4px] -left-[37px] w-[40px] h-[40px] rounded-l-[40px] rounded-tr-[40px] bg-[#1F2937] flex items-center justify-center'>
+                                        <h3 className='text-[18px] font-[600] text-[#EB8546]'>{step.id}</h3>
                                     </span>
-                                    <div className="px-5 py-4 backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.1] to-white/[0.15] shadow-[0_1px_5px_0px_rgba(0,0,0,0.15)] rounded-l-[30px] rounded-r-[50px]">
+                                    <div className="px-5 py-4 bg-white/[0.2] border border-white/[.25] backdrop-blur-sm rounded-l-[30px] rounded-r-[50px]">
                                         <div className='flex items-center justify-between'>
                                             <div>
-                                                <div className="px-3 py-[3px] w-auto rounded-[30px] bg-[#1F2937] text-[12px] font-[500] text-white tracking-wide table">{step.topic}</div>
+                                                <div className="px-3 py-[3px] w-auto rounded-[30px] bg-white/[0.65] text-[12px] font-[500] text-[#1F2937] tracking-wide table">{step.topic}</div>
                                                 <h4 className="mt-2 md:text-[19px] text-[16px] font-[300] text-[#1F2937] tracking-normal md:leading-normal leading-[23px] md:w-auto w-[190px]">{step.Name}</h4>
                                             </div>
-                                            <div className="h-14 w-14 rounded-full bg-[#17B057]/[.22] flex items-center justify-center">
-                                                <img className="h-8 w-8" src={step.image} alt="steps"/>
+                                            <div className="h-14 w-14 rounded-full bg-white/[.35] flex items-center justify-center">
+                                                <img className="h-7 w-7" src={step.image} alt="steps"/>
                                             </div>
                                         </div>
-                                        <span className="line bg-[#FF8045]/[.25] w-0.5 h-full top-[24px] -left-[14px] absolute"></span>
+                                        <span className="line bg-[#1F2937] w-0.5 h-[73%] top-[35px] -left-[18px] absolute"></span>
                                     </div>
                                 </div>
                             ))}

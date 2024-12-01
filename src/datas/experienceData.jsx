@@ -8,8 +8,7 @@ export const experienceData1 = [
         company: 'Next IT Ltd.',
         position: 'UI-UX Engineer',
         location: 'Meah Bari, House-03, Road-13, Gulshan-1, Dhaka-1212',
-        logo: './img/jobs/next.webp',
-        img:"./img/services/1.svg"
+        logo: './img/jobs/next.webp'
     },
     {
         id : '2',
@@ -19,8 +18,7 @@ export const experienceData1 = [
         company: 'WAN IT Ltd.',
         position: 'Frontend Engineer',
         location: 'Gulfesha Plaza, S.S. Parvin Road, Moghbazar, Dhaka',
-        logo: './img/jobs/wan.webp',
-        img:"./img/services/3.svg"
+        logo: './img/jobs/wan.webp'
     },
     {
         id : '3',
@@ -30,8 +28,7 @@ export const experienceData1 = [
         company: 'Sakoyat Soft',
         location: 'Dakshinkhan, Housebuilding, Uttara, Dhaka-1230',
         position: 'Web Designer',
-        logo: './img/jobs/sako.webp',
-        img:"./img/services/2.svg"
+        logo: './img/jobs/sako.webp'
     },
 ];
 
@@ -43,8 +40,7 @@ export const experienceData2 = [
         endDate: 'Present',
         company: 'Upwork',
         position: 'Frontend Engineer',
-        logo: './img/jobs/upwork.webp',
-        img:"./img/services/3.svg"
+        logo: './img/jobs/upwork.webp'
     },
     {
         id : '2',
@@ -53,8 +49,7 @@ export const experienceData2 = [
         endDate: 'Present',
         company: 'Dribbble',
         position: 'UI-UX Engineer',
-        logo: './img/jobs/dribbble.webp',
-        img:"./img/services/1.svg"
+        logo: './img/jobs/dribbble.webp'
     },
     {
         id : '3',
@@ -63,7 +58,6 @@ export const experienceData2 = [
         endDate: 'Present',
         company: 'Linkedin',
         position: 'Frontend | UX/UI Engineer',
-        logo: './img/jobs/linkedin.webp',
-        img:"./img/services/2.svg"
+        logo: './img/jobs/linkedin.webp'
     }
 ];

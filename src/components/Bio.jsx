@@ -19,14 +19,12 @@ const Bio = () => {
                     <div className="md:mt-8 mt-4 relative z-10">
                         <div className="md:gap-3 gap-4 grid md:grid-cols-2 grid-cols-1">
                             <div className="w-full" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
-                                <div className="md:p-2 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
-                                    <h2 className="flex items-center justify-center">
-                                        <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Full Time (Official)</span>
-                                    </h2>
+                                <div className="p-3 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
+                                    <span className="my-3 ps-5 flex md:text-[24px] text-[21px] tracking-tight font-[600] text-[#1F2937]">Full Time (Official)</span>
                                     <div className="tracking-normal flex flex-col gap-2">
                                         {experienceData1.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group p-5 overflow-hidden relative bg-white/[0.35] border border-white/[0.15] hover:bg-white/[0.35] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                            className="group p-5 overflow-hidden relative bg-white/[0.2] border border-white/[0.15] hover:bg-white/[0.3] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                                 <div className="flex gap-2">
                                                     <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
@@ -38,13 +36,21 @@ const Bio = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 items-center justify-start">
-                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.65] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
+                                                <div className="mt-3 flex gap-3 items-center justify-between">
+                                                    <div className="ms-1 flex items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                                            <g fill="none" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
+                                                                <path d="M8.308 21h7.384c3.71 0 4.375-1.45 4.569-3.213l.692-7.2c.25-2.196-.397-3.987-4.338-3.987h-9.23c-3.941 0-4.587 1.791-4.338 3.987l.692 7.2C3.933 19.55 4.598 21 8.308 21m0-14.4v-.72c0-1.593 0-2.88 2.954-2.88h1.476c2.954 0 2.954 1.287 2.954 2.88v.72"/>
+                                                                <path d="M9.812 13.331A15.26 15.26 0 0 1 3.234 11m11 2.331A15.26 15.26 0 0 0 20.812 11M14 13.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/>
+                                                            </g>
+                                                        </svg>
+                                                        <p className="ms-1 mt-1 md:text-[15px] text-[12px] text-[#1F2937] font-[400] tracking-wide">{expo.position}</p>
+                                                    </div>
+                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.5] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
                                                         <time>{expo.endDate}</time>
                                                     </dd>
-                                                    <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.position}</div>
                                                 </div>
                                                 <div className="md:h-14 md:w-14 h-10 w-10 absolute right-[5px] top-[5px] rounded-full border border-[#1f2937]/[0.18] group-hover:bg-white group-hover:border-white flex items-center justify-center transition-all duration-500">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ease-in-out duration-500'>
@@ -52,44 +58,51 @@ const Bio = () => {
                                                         <path fill="#1F2937" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                                     </svg>
                                                 </div>
-                                                <img className="absolute md:-bottom-[145px] md:right-0 -bottom-[150px] -right-10 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
                                             </Link>
                                         ))}
                                     </div>
                                 </div>
                             </div>
                             <div className="w-full" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                                <div className="md:p-10 p-4 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
-                                    <h2 className="flex items-center justify-center">
-                                        <span className="md:text-[25px] text-[21px] tracking-tight font-[600] text-[#1F2937] text-center">Freelance (Online)</span>
-                                    </h2>
-                                    <div className="tracking-normal mt-4">
+                                <div className="p-3 relative overflow-hidden bg-white/[0.2] border border-white/[0.15] md:rounded-[45px] rounded-[40px]">
+                                    <span className="my-3 ps-5 flex md:text-[24px] text-[21px] tracking-tight font-[600] text-[#1F2937]">Freelance (Online)</span>
+                                    <div className="tracking-normal flex flex-col gap-2">
                                         {experienceData2.map(expo => (
                                             <Link to={expo.link} key={expo.id} target="_blank" 
-                                            className="group overflow-hidden mt-4 md:px-7 px-4 md:pb-7 pb-4 md:pt-6 pt-4 block relative backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.12] to-white/[0.15] shadow-[0_1px_3px_0px_rgba(2,24,93,0.18)] hover:shadow-xl hover:bg-white transition-all duration-500 justify-between md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
-                                                <div className="flex gap-2 items-center">
-                                                    <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white shadow-xl">
+                                            className="group p-5 overflow-hidden relative bg-white/[0.2] border border-white/[0.15] hover:bg-white/[0.3] transition-all duration-500 md:rounded-[35px] rounded-[28px]" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                                <div className="flex gap-2">
+                                                    <div className="relative flex h-[50px] w-[50px] flex-none items-center justify-center rounded-full bg-white">
                                                         <img src={expo.logo} alt="icon" width="40" height="40"/>
                                                     </div>
-                                                    <div>
-                                                        <span className="block w-max md:text-[17px] text-[15px] font-[600] text-[#1F2937]">{expo.position}</span>
-                                                        <div className="md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.company}</div>
+                                                    <div className='pe-10'>
+                                                        <div className="">
+                                                            <span className="block w-max md:text-[18px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
+                                                            <div className="text-[13px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.location}</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex gap-3 items-center justify-startnpm install --save aos@next mt-4">
-                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-[#FF8045]/[0.35] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
+                                                <div className="mt-3 flex gap-3 items-center justify-between">
+                                                    <div className="ms-1 flex items-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                                            <g fill="none" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
+                                                                <path d="M8.308 21h7.384c3.71 0 4.375-1.45 4.569-3.213l.692-7.2c.25-2.196-.397-3.987-4.338-3.987h-9.23c-3.941 0-4.587 1.791-4.338 3.987l.692 7.2C3.933 19.55 4.598 21 8.308 21m0-14.4v-.72c0-1.593 0-2.88 2.954-2.88h1.476c2.954 0 2.954 1.287 2.954 2.88v.72"/>
+                                                                <path d="M9.812 13.331A15.26 15.26 0 0 1 3.234 11m11 2.331A15.26 15.26 0 0 0 20.812 11M14 13.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/>
+                                                            </g>
+                                                        </svg>
+                                                        <p className="ms-1 mt-1 md:text-[15px] text-[12px] text-[#1F2937] font-[400] tracking-wide">{expo.position}</p>
+                                                    </div>
+                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.5] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
                                                         <time>{expo.endDate}</time>
                                                     </dd>
                                                 </div>
-                                                <div className="md:h-14 md:w-14 h-10 w-10 absolute right-[10px] top-[10px] rounded-full bg-[#17B057]/[.18] group-hover:bg-[#17B057]/[.35] flex items-center justify-center transition-all duration-500">
+                                                <div className="md:h-14 md:w-14 h-10 w-10 absolute right-[5px] top-[5px] rounded-full border border-[#1f2937]/[0.18] group-hover:bg-white group-hover:border-white flex items-center justify-center transition-all duration-500">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" className='relative ease-in-out duration-500'>
-                                                        <path fill="#17B057" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
-                                                        <path fill="#17B057" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
+                                                        <path fill="#1F2937" d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0z"/>
+                                                        <path fill="#1F2937" d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312z"/>
                                                     </svg>
                                                 </div>
-                                                <img className="absolute md:-bottom-[145px] md:right-0 -bottom-[150px] -right-10 -z-10 w-[280px] opacity-40" src={expo.img} alt="img"></img>
                                             </Link>
                                         ))}
                                     </div>

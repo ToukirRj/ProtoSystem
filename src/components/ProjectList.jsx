@@ -36,7 +36,7 @@ function ProjectList (){
                 </div>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
                     {ProjectData.sort((a, b) => b.id - a.id).map((item) => (
-                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-1 w-full h-auto rounded-[19px] bg-[#1F2937]/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-2 w-full h-auto rounded-[20px] bg-white/[.25] border border-white/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                             <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[17px] transition-all duration-300'>
                                 <img src={item.image} alt='pro-img' className='group-hover:opacity-40 transition-all duration-300'/>
                             </div>
@@ -50,12 +50,12 @@ function ProjectList (){
                     ))}
                 </div>
             </div>
-            <div className={`fixed z-[9999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto bg-[#FAF4E7] text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out rounded-t-[30px]`}>
+            <div className={`fixed z-[9999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto backdrop-blur-lg bg-white text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out rounded-t-[30px]`}>
                 {activeData && (  
                     <>
                         <div className="sticky top-0 z-10 w-full">
                             <div className="mx-auto md:max-w-5xl max-w-full md:px-0 px-4">
-                                <h2 className="md:text-[23px] text-[17px] font-semibold backdrop-blur-lg bg-[#FAF4E7]/[.9] w-full h-[70px] flex items-center md:ps-0 pe-[45px]">{activeData.title}</h2>
+                                <h2 className="md:text-[23px] text-[17px] font-semibold backdrop-blur-lg bg-white/[.75] w-full h-[70px] flex items-center md:ps-0 pe-[45px]">{activeData.title}</h2>
                             </div>
                             <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">

@@ -4,8 +4,8 @@ const Eyes = () => {
     return (
         <>
             <div className="md:pt-20 pt-6 md:pb-16 pb-6 relative z-20">
-                <div className="mx-auto px-4 sm:px-12 max-w-7xl xl:px-8">
-                    <div className='grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4 md:mx-[70px] mx-0'>
+                <div className="mx-auto w-full max-w-7xl">
+                    <div className='grid md:grid-cols-2 grid-cols-1 gap-3 md:mx-[70px] mx-0'>
                         <div className="text-end" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
                             <div className='md:w-[65%] w-full mx-auto md:mt-[50px] mt-0 md:text-start text-center'>
                                 <h2 className="md:text-[69px] text-[47px] font-bold text-[#1F2937] md:leading-[80px] leading-[55px]">My 
@@ -28,16 +28,18 @@ const Eyes = () => {
                                         </h4>
                                         <h4 className="relative mt-8 pe-[10px] md:text-[28px] text-[19px] font-[600] text-[#1F2937] md:leading-[35px] leading-[27px] w-[84%]">
                                             {service.description}
-                                        </h4>                      
-                                        <div className='md:gap-2 gap-1 md:mt-[200px] mt-[150px]'>
+                                        </h4>
+                                        <div className='flex items-center justify-center'>
+                                            <img className='w-[250px]' src={service.img} alt="img"/>
+                                        </div>                      
+                                        <div className='md:gap-2 gap-1'>
                                             {service.tools.map((tool, index) => (
-                                                <span key={index} className="inline-flex px-[10px] py-[2px] me-2 mt-2 items-center justify-center text-[#1F2937] font-[500] text-[13px] rounded-[7px] bg-white shadow-[0_3px_15px_0px_rgba(2,24,93,0.17)] tracking-wider">
+                                                <span key={index} className="inline-flex px-4 py-1 me-2 mt-2 items-center justify-center text-[#1F2937] font-[500] text-[13px] rounded-full bg-white/[.5] tracking-wider">
                                                     {tool}
                                                 </span>
                                             ))}
                                         </div>
                                     </div>
-                                    <img className='absolute -bottom-10 -right-10 -z-10 w-[420px]' src={service.img} alt="img"/>
                                 </div>
                             </div>
                         ))}

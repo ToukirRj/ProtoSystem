@@ -18,9 +18,9 @@ const Weapons = () => {
         </div>
 
         <div className="md:mt-7 mt-4 relative z-10">
-          <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
             {skillsData.map((category, index) => (
-              <div key={index} className="w-full backdrop-blur-lg bg-gradient-to-t from-[#FF8045]/[0.1] to-white/[0.15] shadow-[0_2px_7px_0px_rgba(2,24,93,0.13)] rounded-[45px] overflow-hidden p-10" data-aos="fade-up" data-aos-duration="350" data-aos-delay="100">
+              <div key={index} className="w-full bg-white/[0.18] border border-white/[.15] rounded-[45px] overflow-hidden p-10" data-aos="fade-up" data-aos-duration="350" data-aos-delay="100">
                 <h2 className="text-[23px] font-[600] text-center tracking-tight text-[#1F2937]">{category.title}</h2>
                 <div className="flex flex-wrap justify-center items-center">
                   {category.skills.map((skill, skillIndex) => (
@@ -29,7 +29,7 @@ const Weapons = () => {
                       <div className="relative -mt-[45px] mb-[13px] p-[5px] flex flex-none items-center justify-center rounded-full bg-[#ff8144]/[0.35]">
                         <img src={skill.icon} alt="icon" className='h-8 w-8 overflow-hidden rounded-full'/>
                       </div>
-                      <h4 className="px-[15px] h-[26px] rounded-full bg-white/[.8] flex items-center w-max text-[12px] font-[600] uppercase tracking-wider text-[#1F2937]">{skill.name}</h4>
+                      <h4 className="px-[15px] h-[26px] rounded-full bg-white/[.5] flex items-center w-max text-[12px] font-[600] uppercase tracking-wider text-[#1F2937]">{skill.name}</h4>
                     </div>
                   ))}
                 </div>                                         

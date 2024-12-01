@@ -36,9 +36,9 @@ function ProjectList (){
                 </div>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
                     {ProjectData.sort((a, b) => b.id - a.id).map((item) => (
-                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-2 w-full h-auto rounded-[20px] bg-white/[.25] border border-white/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-2 w-full h-auto rounded-[25px] bg-white/[.25] border border-white/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                             <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[17px] transition-all duration-300'>
-                                <img src={item.image} alt='pro-img' className='group-hover:opacity-40 transition-all duration-300'/>
+                                <img src={item.image} alt='pro-img' className='group-hover:opacity-50 transition-all duration-300'/>
                             </div>
                             <div className='absolute bottom-0 left-0 w-full h-full text-center px-3 scale-0 group-hover:scale-100 bg-gradient-to-t from-[#1F2937]/[.9] via-[#1F2937]/[.035] to-transparent flex items-end justify-center'>
                                 <h3 className='m-0 text-[15px] text-white font-[400] text-center py-3 tracking-wide'>{item.title}</h3>

@@ -39,7 +39,8 @@ export const experienceData2 = [
         startDate: 'Aug 2020',
         endDate: 'Present',
         company: 'Upwork',
-        position: 'Frontend Engineer',
+        topics: 'Next.js, React, HTML, SCSS(SASS) | Figma, XD',
+        position: 'Front-End Engineer | UX/UI Engineer',
         logo: './img/jobs/upwork.webp'
     },
     {
@@ -48,7 +49,8 @@ export const experienceData2 = [
         startDate: 'May 2018',
         endDate: 'Present',
         company: 'Dribbble',
-        position: 'UI-UX Engineer',
+        topics: 'Dashboard Design | Website Design | App Design',
+        position: 'UX/UI Engineer',
         logo: './img/jobs/dribbble.webp'
     },
     {
@@ -57,7 +59,8 @@ export const experienceData2 = [
         startDate: 'Mar 2017',
         endDate: 'Present',
         company: 'Linkedin',
-        position: 'Frontend | UX/UI Engineer',
+        topics: 'User Interface Builder | Front-End Engineer | UX/UI Engineer',
+        position: 'Front-End Engineer | UX/UI Engineer',
         logo: './img/jobs/linkedin.webp'
     }
 ];

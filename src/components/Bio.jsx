@@ -32,11 +32,11 @@ const Bio = () => {
                                                     <div className='pe-10'>
                                                         <div className="">
                                                             <span className="block w-max md:text-[18px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
-                                                            <div className="text-[13px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.location}</div>
+                                                            <div className="text-[12px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.location}</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="mt-3 flex gap-3 items-center justify-between">
+                                                <div className="mt-3 pt-3 flex gap-3 items-center justify-between border-t border-[#1F2937]/[.1]">
                                                     <div className="ms-1 flex items-center">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
                                                             <g fill="none" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
@@ -44,9 +44,9 @@ const Bio = () => {
                                                                 <path d="M9.812 13.331A15.26 15.26 0 0 1 3.234 11m11 2.331A15.26 15.26 0 0 0 20.812 11M14 13.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/>
                                                             </g>
                                                         </svg>
-                                                        <p className="ms-1 mt-1 md:text-[15px] text-[12px] text-[#1F2937] font-[400] tracking-wide">{expo.position}</p>
+                                                        <p className="ms-1 mt-1 md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.position}</p>
                                                     </div>
-                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.5] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
+                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.35] border border-white/[.25] text-[12px] text-[#1F2937] font-[500] tracking-wide">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
                                                         <time>{expo.endDate}</time>
@@ -77,11 +77,11 @@ const Bio = () => {
                                                     <div className='pe-10'>
                                                         <div className="">
                                                             <span className="block w-max md:text-[18px] text-[15px] font-[600] text-[#1F2937]">{expo.company}</span>
-                                                            <div className="text-[13px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.location}</div>
+                                                            <div className="text-[12px] font-[400] text-[#1F2937]/[0.9] tracking-[0.5px] leading-[20px]">{expo.topics}</div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="mt-3 flex gap-3 items-center justify-between">
+                                                <div className="mt-3 pt-3 flex gap-3 items-center justify-between border-t border-[#1F2937]/[.12]">
                                                     <div className="ms-1 flex items-center">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
                                                             <g fill="none" stroke="#1F2937" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
@@ -89,9 +89,9 @@ const Bio = () => {
                                                                 <path d="M9.812 13.331A15.26 15.26 0 0 1 3.234 11m11 2.331A15.26 15.26 0 0 0 20.812 11M14 13.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/>
                                                             </g>
                                                         </svg>
-                                                        <p className="ms-1 mt-1 md:text-[15px] text-[12px] text-[#1F2937] font-[400] tracking-wide">{expo.position}</p>
+                                                        <p className="ms-1 mt-1 md:text-[13px] text-[12px] text-[#1F2937] font-[500] tracking-wide">{expo.position}</p>
                                                     </div>
-                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.5] text-[12px] text-[#1F2937] font-[500] tracking-wide uppercase">
+                                                    <dd className="table px-4 py-[3px] w-auto rounded-[30px] bg-white/[0.35] border border-white/[.25] text-[12px] text-[#1F2937] font-[500] tracking-wide">
                                                         <time>{expo.startDate}</time>
                                                         <span>—</span>
                                                         <time>{expo.endDate}</time>

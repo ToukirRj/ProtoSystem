@@ -1,5 +1,35 @@
 const projectData = [
   {
+    id: '23',
+    title: 'TickeTar - Online Ticket Management',
+    image: './img/projects/23.webp',
+    content: "TickeTar Online Ticket Management System is a digital platform designed to streamline the process of creating, managing, and resolving tickets across various domains, such as event bookings, customer support, or transportation. It provides users with a seamless experience to book tickets, track their status, or raise issues while offering administrators tools for monitoring, resolving, and analyzing ticket data. By automating workflows, integrating communication channels, and providing real-time updates, the system enhances efficiency, reduces manual effort, and improves overall user satisfaction."
+  },
+  {
+    id: '22',
+    title: 'beCo - CoffeeShop Mobile App',
+    image: './img/projects/22.webp',
+    content: "beCo coffee shop app is designed to streamline the coffee-ordering experience for customers and enhance operations for the business. It typically allows users to browse the menu, customize their orders (like selecting coffee type, size, add-ons, etc.), place orders for pickup or delivery, and make payments directly in the app. The app might also include loyalty programs, where users can earn points with each purchase to redeem rewards, and personalized recommendations based on past orders. Additional features could include location-based services to find nearby coffee shops, real-time order status updates, and pre-order scheduling for convenient pickups."
+  },
+  {
+    id: '21',
+    title: 'MiddleStump- Social Investing',
+    image: './img/projects/21.webp',
+    content: "MiddleStump provides funding and support to initiatives that generate both financial returns and positive social or environmental impact. It focuses on sustainable development, fostering social change through investments in areas like education, healthcare, and green energy."
+  },
+  {
+    id: '20',
+    title: 'AceDeal- Order & Payment Management',
+    image: './img/projects/20.webp',
+    content: "AceDeal Order & Payment Management refers to the processes involved in handling customer orders and processing payments within a business or e-commerce platform. It ensures smooth order tracking, fulfillment, and secure payment handling. Order Management: Order Creation, Order Processing, Order Fulfillment, Order Tracking, Returns/Exchanges. Payment Management: Payment Processing, Fraud Detection, Payment Reconciliation, Refunds Order etc"
+  },
+  {
+    id: '19',
+    title: 'Byke.com',
+    image: './img/projects/19.webp',
+    content: "The Byke.com mobile app is a platform designed to streamline the buying and selling of bicycles, accessories, and related products. It offers a user-friendly interface for browsing products, comparing models, and placing orders securely. The app typically includes features like product search, shopping cart, secure checkout, order tracking, and customer reviews. It may also integrate with delivery services and offer payment options such as credit cards, wallets, or UPI. Designed for bike enthusiasts and retailers alike, the app ensures a smooth and accessible shopping experience on the go."
+  },
+  {
     id: '18',
     title: 'Visua.Ai',
     image: './img/projects/18.webp',

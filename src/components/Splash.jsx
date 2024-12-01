@@ -14,7 +14,7 @@ const Splash = () => {
                                 <h1 className="my-2 md:text-[43px] text-[32px] font-[700] text-[#1f2937] tracking-tight md:leading-[55px] leading-[45px] w-full text-center" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                     Toukir Rahman
                                 </h1>
-                                <div className="mt-2 border-t border-[#1F2937]/[0.2] pt-4 relative z-10" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                                <div className="mt-2 border-t border-[#1F2937]/[0.12] pt-4 relative z-10" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                                     <div className="flex justify-center">
                                         <Link className="group h-[46px] w-auto relative overflow-hidden z-10 flex items-center rounded-full ps-4 pe-[12px] bg-[#20bd62] hover:bg-[#299c59] ease-in-out duration-500" to="https://wa.me/8801753778070" target="_blank">
                                             <span className="w-[38px] h-[38px] absolute -z-[1] left-[5px] bg-[#2b6e58] group-hover:bg-[#235847] rounded-full btn-left ease-in-out duration-500"></span>

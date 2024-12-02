@@ -27,16 +27,16 @@ function ProjectList (){
         <div className='md:py-20 py-6 w-full'>
             <div className="mx-auto md:max-w-7xl max-w-full md:px-0 px-4">
                 <div className='text-center mb-12' data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
-                    <h2 className="md:text-[52px] text-[43px] font-bold text-[#1F2937] md:leading-[60px] leading-[53px]">Best Recent 
+                    <h2 className="md:text-[52px] text-[43px] font-bold text-[#1F2937] dark:text-white md:leading-[60px] leading-[53px]">Best Recent 
                         <span className="bg-gradient-to-r from-[#ff8144] to-[#17b057] inline-block text-transparent bg-clip-text ps-3">Project</span> <br/>
                     </h2>
-                    <p className="mx-auto max-w-full mt-1 text-[#1F2937] w-full md:text-[19px] text-[17px] font-[300] md:leading-[27px] leading-[23px] tracking-normal  ">
+                    <p className="mx-auto max-w-full mt-1 text-[#1F2937] dark:text-white w-full md:text-[19px] text-[17px] font-[300] md:leading-[27px] leading-[23px] tracking-normal  ">
                         Sample project of my some works. Take a good idea about my concepts
                     </p>
                 </div>
-                <div className='grid md:grid-cols-3 grid-cols-1 gap-9'>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-3'>
                     {ProjectData.sort((a, b) => b.id - a.id).map((item) => (
-                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-2 w-full h-auto rounded-[25px] bg-white/[.25] border border-white/[.15] group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
+                        <a key={item.id} onClick={() => toggleOffCanvas(item)} className='block cursor-pointer relative p-2 w-full h-auto rounded-[25px] bg-white/[.35] border border-white/[.15] dark:bg-white/[.15] dark:border-0 group transition-all duration-300 overflow-hidden' data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
                             <div className='w-full h-auto overflow-hidden bg-[#1F2937] rounded-[17px] transition-all duration-300'>
                                 <img src={item.image} alt='pro-img' className='group-hover:opacity-50 transition-all duration-300'/>
                             </div>
@@ -50,12 +50,12 @@ function ProjectList (){
                     ))}
                 </div>
             </div>
-            <div className={`fixed z-[9999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto backdrop-blur-lg bg-white text-[#1F2937] transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out rounded-t-[30px]`}>
+            <div className={`fixed z-[9999] bottom-0 left-0 w-full h-[94vh] overflow-y-auto backdrop-blur-lg bg-white dark:bg-[#141a11] text-[#1F2937] dark:text-white transform ${isOpen ? 'translate-y-0' : 'translate-y-full'} transition-transform duration-300 ease-in-out rounded-t-[30px]`}>
                 {activeData && (  
                     <>
                         <div className="sticky top-0 z-10 w-full">
                             <div className="mx-auto md:max-w-5xl max-w-full md:px-0 px-4">
-                                <h2 className="md:text-[23px] text-[17px] font-semibold backdrop-blur-lg bg-white/[.75] w-full h-[70px] flex items-center md:ps-0 pe-[45px]">{activeData.title}</h2>
+                                <h2 className="md:text-[23px] text-[17px] font-semibold backdrop-blur-lg dark:backdrop-blur-lg bg-white/[.75] dark:bg-[#141a11]/[.9] w-full h-[70px] flex items-center md:ps-0 pe-[45px]">{activeData.title}</h2>
                             </div>
                             <button className="absolute top-4 right-4 text-white text-xl" onClick={() => setIsOpen(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24">
@@ -69,8 +69,8 @@ function ProjectList (){
                             <div className="relative">
                                 <img src={activeData.image} alt='pro-img' className='w-full h-auto rounded-[15px]'/>
                                 <div className="mx-auto md:max-w-[40rem] max-w-full pt-10 pb-[150px]">
-                                    <h1 className='md:text-[23px] text-[17px] text-[#1F2937] font-[700]'>Short Intro</h1>
-                                    <p className="mt-4 text-[15px] text-[#1F2937] font-[400] tracking-wide leading-[29px]">{activeData.content}</p>
+                                    <h1 className='md:text-[23px] text-[17px] text-[#1F2937] dark:text-white font-[700]'>Short Intro</h1>
+                                    <p className="mt-4 text-[15px] text-[#1F2937] dark:text-white font-[400] tracking-wide leading-[29px]">{activeData.content}</p>
                                 </div>
                             </div>
                         </div>

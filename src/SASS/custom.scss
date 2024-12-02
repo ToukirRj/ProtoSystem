@@ -46,15 +46,38 @@
     }
 }
 
+body{
+    transition: background-color 0.3s, color 0.3s;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+header{
+    button{
+        svg{
+            path{
+                @apply dark:fill-white;
+            }
+        }
+    }
+}
+
+.CircularProgressbar{
+    text{
+        @apply dark:fill-white #{!important};
+    }
+    .CircularProgressbar-trail{
+        @apply dark:stroke-orange-50 #{!important};
+    }
 }
 
 //========Custom SASS=========>
 header{
     nav{
         a{
-            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] hover:text-[#17b057] px-6;
+            @apply block transition uppercase text-[13px] font-[500] text-[#1F2937] dark:text-white hover:text-[#17b057] dark:hover:text-[#17b057] px-6;
             &.active{
                 @apply text-[#17b057];
             }
@@ -62,19 +85,19 @@ header{
     }
 }
 .nav-btn{
-    @apply cursor-pointer bg-transparent border-0 outline-0 text-gray-700 lg:hidden lg:opacity-0 visible opacity-100;
+    @apply cursor-pointer bg-transparent border-0 outline-0 text-gray-700 lg:hidden lg:opacity-0 visible opacity-100 ms-3;
 }
 
 @media only screen and (max-width:1024px){
     header{
         nav{
-            @apply fixed top-0 left-0 z-10 h-[100vh] w-full flex flex-col items-center justify-center gap-2 bg-white/[0.5] backdrop-blur-lg transition-[1.5s] transform translate-y-[-100vh];
+            @apply fixed top-0 left-0 z-10 h-[100vh] w-full flex flex-col items-center justify-center gap-2 bg-white/[.95] transition-[1.5s] transform translate-y-[-100vh];
             .close-btn{
                 @apply visible block absolute top-[1rem] right-[1rem];
                 margin-top:0 !important;
             }
             a{
-                @apply text-[15px] text-[#000];
+                @apply text-[23px] text-[#000] font-[300] capitalize;
             }
         }
         .no-respons{

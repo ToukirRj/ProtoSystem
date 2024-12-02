@@ -61,20 +61,20 @@ const Submit = () => {
                     transition: Zoom
                 />
                 <div className="flex items-center justify-center">
-                    <h4 className="bg-white/[0.75] text-[#1F2937] text-[12px] font-[500] uppercase tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto"> Let&apos;s start to build</h4>
+                    <h4 className="bg-white/[0.75] dark:bg-white/[.05] text-[#1F2937] dark:text-white text-[12px] font-[500] uppercase tracking-wider px-4 py-1 rounded-full table md:mx-0 mx-auto"> Let&apos;s start to build</h4>
                 </div>
-                <h1 className='my-[3px] text-[31px] font-[700] text-[#1F2937] text-center'>Get In Connect</h1>
-                <p className='mb-5 text-[13px] font-[500] text-[#1F2937] text-center tracking-wide opacity-60'>Please tell me about your require & submit now</p>
+                <h1 className='my-[3px] text-[31px] font-[700] text-[#1F2937] dark:text-white text-center'>Get In Connect</h1>
+                <p className='mb-5 text-[13px] font-[500] text-[#1F2937] dark:text-white text-center tracking-wide opacity-60'>Please tell me about your require & submit now</p>
                 <form ref={form} onSubmit={sendEmail} className="w-full">
                     <div className="grid grid-cols-1 gap-3">
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Full Name
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Full Name
                                 <span className='text-red-500 ms-1'>*</span>
                             </label> 
                             <input 
                                 placeholder="Type Full Name" 
                                 type="text" 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="full_name" 
                                 name="full_name" 
                                 autoComplete="given-name" 
@@ -84,13 +84,13 @@ const Submit = () => {
                             /> 
                         </div>
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Email Address
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Email Address
                                 <span className='text-red-500 ms-1'>*</span>
                             </label> 
                             <input 
                                 placeholder="Type Email Address" 
                                 type="text" 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="email" 
                                 name="email" 
                                 autoComplete="given-email" 
@@ -100,11 +100,11 @@ const Submit = () => {
                             /> 
                         </div>
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Phone Number</label> 
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Phone Number</label> 
                             <input 
                                 placeholder="Type Phone Number" 
                                 type="text" 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="phone" 
                                 name="phone" 
                                 autoComplete="given-phone" 
@@ -113,14 +113,14 @@ const Submit = () => {
                             /> 
                         </div>
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Project Details
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Project Details
                                 <span className='text-red-500 ms-1'>*</span>
                             </label> 
                             <textarea 
                                 placeholder="Type Your Message" 
                                 type="text" 
                                 rows={4} 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="message" 
                                 name="message" 
                                 autoComplete="given-message"
@@ -130,11 +130,11 @@ const Submit = () => {
                             />
                         </div>
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Target Time-frame</label> 
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Target Time-frame</label> 
                             <input 
                                 placeholder="Type Phone Number" 
                                 type="text" 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="target" 
                                 name="target" 
                                 autoComplete="given-target" 
@@ -143,11 +143,11 @@ const Submit = () => {
                             /> 
                         </div>
                         <div className="w-full"> 
-                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] tracking-wider">Budget Frame</label> 
+                            <label className="block text-[13px] font-[500] text-[#1F2937]/[0.75] dark:text-white/[.65] tracking-wider">Budget Frame</label> 
                             <input 
                                 placeholder="Type Phone Number" 
                                 type="text" 
-                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] font-[500] text-[13px] tracking-wider placeholder-white/20 bg-white focus:border-[#13B780] focus:outline-none" 
+                                className="block w-full px-3 py-3 rounded-[10px] appearance-none text-[#1F2937] dark:text-white font-[500] text-[13px] tracking-wider placeholder-[#1F2937]/40 dark:placeholder-white/30 bg-white dark:bg-white/[.1] focus:border-[#13B780] focus:outline-none" 
                                 id="budget" 
                                 name="budget" 
                                 autoComplete="given-budget" 

@@ -83,7 +83,7 @@ const BgBackdrop = () => {
   return (
     <div>
       <canvas ref={canvasRef}></canvas>
-      <div className="fixed left-0 top-0 w-full h-[100vh] -z-10 bg-[#D5E4BF]/[0.73] backdrop-blur-[200px]"></div>
+      <div className="fixed left-0 top-0 w-full h-[100vh] -z-10 bg-[#D5E4BF]/[0.73] dark:bg-[#0c0f0a]/[.85] backdrop-blur-[200px]"></div>
     </div>
   )
 };

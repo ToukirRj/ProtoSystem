@@ -14,5 +14,7 @@ export const theme = {
   }
 };
 
+export const darkMode = 'class'; // Enable dark mode based on a class
+
 export const plugins = [];
 
